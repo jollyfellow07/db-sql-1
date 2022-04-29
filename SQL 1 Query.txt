@@ -1,0 +1,44 @@
+1.
+SELECT * FROM teachers;
+**************************************
+2.
+SELECT head_of_department FROM departments;
+**************************************
+3.
+SELECT * FROM degrees WHERE level='magistrale';
+**************************************
+4.
+SELECT * FROM students WHERE name='Marco';
+**************************************
+5.
+SELECT * FROM courses WHERE cfu>=12;
+**************************************
+6.
+SELECT * FROM courses WHERE cfu>9 OR cfu<6;
+**************************************
+7.
+SELECT * FROM courses WHERE period='I semestre' and year=1;
+*************************************
+8.
+SELECT * FROM courses WHERE website IS NULL;
+*************************************
+9.
+ECT * FROM teachers WHERE phone is not null;
+----------------------------------------------------------------------------------------------------------------------------
+BONUS.
+10.
+SELECT *
+FROM students
+WHERE name LIKE  'e%';
+**************************************
+11.
+SELECT count (*)
+FROM teachers
+WHERE name LIKE  'e%' ;
+**************************************
+12.
+SELECT count (*)
+FROM teachers
+WHERE phone IS NULL;
+
+
